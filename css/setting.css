@@ -1,0 +1,130 @@
+body {
+	margin: 0px;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: deepskyblue;
+	float: left;
+}
+
+h4 {
+	color: white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+
+.bg{
+	margin-top: 50px;
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.bg2{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	float: left;
+}
+
+.content{
+	height: 50px;
+	width: 100%;
+	position: relative;
+	float: left;
+	background: #FFFFFF;
+}
+
+.content span:nth-child(1){
+	position: relative;
+	float: left;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-left: 10px;
+	
+}
+.content span:nth-child(2){
+	position: relative;
+	float: right;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+/*==================bottom start====================*/
+
+.bottom {
+	width: 100%;
+	position: relative;
+	float: left;
+	height: 80px;
+}
+
+.bottom li {
+	height: 80px;
+	background: #FFFFFF!important;
+	text-align: center;
+	list-style-type: none;
+	width: 33.3%;
+	float: left;
+	margin-top: 10px;
+}
+.bottom ul {
+	margin: 0;
+}
+
+.bottom li a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 13px;
+}
+
+.exsit{
+	height: 50px;
+	width: 100%;
+	position: relative;
+	float: left;
+	background: #FFFFFF;
+}
+.exsit p{
+	color: #000000;
+	width: 100%;
+	margin-top: 15px;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+/*==================bottom start====================*/
+.bottom{
+	margin-top: 375px;
+	width: 100%;
+	
+}
+.bottom li{
+	text-align: center;
+	list-style-type: none;
+	width: 33.3%;
+	float: left;
+	margin-top: 10px;
+	
+}
+.bottom ul{
+	margin: 0;
+}
+.bottom li a{
+	
+	text-decoration: none;
+	color: #000000;
+	font-size: 13px;
+}
+/*==================bottom end====================*/

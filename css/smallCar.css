@@ -1,0 +1,290 @@
+body{
+	margin: 0px;
+	background-color: #EFEFF4;
+}
+.main{
+	width: 100%;
+	height: 100%;
+}
+/*==================title start====================*/
+.title{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: deepskyblue;
+}
+.title_img{
+	position: absolute;
+	width: 20%;
+	height:100%;
+	float: left;
+	margin-top: 13px;
+	margin-left: 10px;
+	font-weight: normal;
+	
+}
+h4{
+	color: white;
+	text-align: center;
+	padding-top: 15px;
+}
+
+/*==================title end====================*/
+
+/*==================banner start====================*/
+.banner{
+	width: 100%;
+	height: 550px;
+	position:relative;
+	float: left;
+}
+.banner_list a{
+	border: none;
+	font-size: 16px;
+	color: #000000!important;
+	margin: 0!important;
+	text-align: left;
+	
+}
+.mui-content{
+	padding: 0!important;
+}
+.banner_list_div{
+	margin: 0!important;
+}
+.banner_list_li{
+	padding: 0!important;	
+	height: 50px;
+	text-align: left;
+	
+}
+
+/*==================banner end====================*/
+.car_s p{
+	width: 90%;
+	height: 40px;
+	text-align: center;
+	color: #000000;
+	font-size:18px;
+	margin-top: 15px;
+}
+
+.se{
+	position: relative;
+	float: left;
+	height: 50px;
+	width:80%;
+	margin-top: 5px;
+	
+}
+
+.se select{
+	height: 50px;
+	width: 70%;
+	font-size: 15px;
+	border: 2px solid #EFEFF4;
+	border-radius: 10px;
+	
+	
+	margin-left: 25px;
+}
+button{
+	height: 45px;
+	width: 18%;
+	position: relative;
+	float: left;
+	right: 25px;
+	margin-top: 7px!important;
+	background-color:#BBBBBB!important;
+	border-radius: 10px!important;
+	
+}
+.zhuangtai{
+	margin-top: 15px;
+	float: left;
+	width: 90%;
+	position: relative;
+	margin-right: 5px;
+}
+.zhuangtai p{
+	text-align: center;
+	font-size: 16px;
+	
+}
+/*======================================*/
+
+.content_setting p{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	color: #000000;
+	font-size:18px;
+	margin-top: 15px;
+}
+
+.se{
+	position: relative;
+	float: left;
+	height: 50px;
+	width:80%;
+	margin-top: 5px;
+	
+}
+
+.se select{
+	height: 50px;
+	width: 70%;
+	font-size: 15px;
+	border: 2px solid #EFEFF4;
+	border-radius: 10px;
+	
+	
+	margin-left: 25px;
+}
+button{
+	height: 45px;
+	width: 18%;
+	position: relative;
+	float: left;
+	right: 25px;
+	margin-top: 7px!important;
+	background-color:#BBBBBB!important;
+	border-radius: 10px!important;
+	
+}
+
+.setting_moshi{
+	font-size: 15px;
+	width: 100%;
+	position: relative;
+	float: left;
+	margin-top: 20px;
+}
+.setting_moshi input{
+	margin-top: -10px;
+
+}
+.setting_radio1{
+	position: relative;
+	width: 45%;
+	margin: 0!important;
+	float: left;
+	
+}
+.setting_radio2{
+	position: relative;
+	width: 45%;
+	margin: 0!important;
+	float: left;
+}
+.setting_btn11{
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	
+}
+.setting_btn11 button{
+	width: 25%;
+	float: right;
+	height: 40px;
+	background:#6641E2!important;
+	margin-right: 90px!important;
+	
+}
+
+/*======================================*/
+
+.car_m p{
+	width: 90%;
+	height: 40px;
+	text-align: center;
+	color: #000000;
+	font-size:18px;
+	margin-top: 15px;
+}
+
+.se_m{
+	position: relative;
+	float: left;
+	height: 50px;
+	width:80%;
+	margin-top: 5px;
+	
+}
+
+.se_m select{
+	height: 50px;
+	width: 70%;
+	font-size: 15px;
+	border: 2px solid #EFEFF4;
+	border-radius: 10px;
+	
+	
+	margin-left: 25px;
+}
+button{
+	height: 45px;
+	width: 18%;
+	position: relative;
+	float: left;
+	right: 25px;
+	margin-top: 7px!important;
+	background-color:#BBBBBB!important;
+	border-radius: 10px!important;
+	
+}
+.chongzhi{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	float: left;
+}
+.chongzhi p{
+	width: 78%;
+	float: left;
+	margin: 0;
+	margin-top: 25px;
+}
+.chongzhi button{
+	height: 45px;
+	width: 18%;
+	position: relative;
+	float: left;
+	right: 20px;
+	margin-top: 7px!important;
+	background-color:#6641E2!important;
+	border-radius: 10px!important;
+	color: white;
+	
+}
+.tijiao{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	float: left;
+	margin-top: 25px;
+}
+.tijiao input{
+	border-radius: 10px;
+	width: 58%;
+	height: 40px;
+	position: relative;
+	float: left;
+	border:1px solid #E8E8E8 ;
+	margin-left: 20px;
+}
+.tijiao button{
+	height: 45px;
+	width: 18%;
+	position: relative;
+	float: left;
+	left: 25px;
+	margin: 0!important;
+	background-color:#6641E2!important;
+	border-radius: 10px!important;
+	color: white;
+	
+}

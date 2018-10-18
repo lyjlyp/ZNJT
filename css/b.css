@@ -1,0 +1,69 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-image: url("background.jpg");
+}
+
+/* Define my own font-family */
+@font-face {
+    font-family: 'calculate_style';
+    src:url("1.ttf");
+}
+
+#calculator {
+    width: 100%;
+    height: 417px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+}
+
+#calculator_container {
+    width:360px;
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+
+}
+
+#result {
+    width: 100%;
+    height: 60px;
+    border: 3px solid white;
+    background-color: blanchedalmond;
+    text-align: right;
+    color: #80CAAC;
+    font-size: 30px;
+    /* using my own font-family */
+    font-family: calculate_style;
+}
+
+.button {
+    width: 24%;
+    height: 65px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    color: #000000;
+}
+
+
+#equal {
+   background: #00BFFF;
+}
+
+#delete_all,#delete_one {
+    
+    background-color: blanchedalmond;
+}
+
+#plus,#subtract,#multiply,#divide {
+    background: #00BFFF;
+ 
+}

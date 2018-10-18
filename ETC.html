@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link rel="stylesheet" href="css/etc.css" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style type="text/css">
+			#list {
+				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
+				margin-top: -1px;
+			}
+			
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#middlePopover_one.mui-popover {
+				width: 80%;
+				height: 300px;
+			}
+			
+			#middlePopover_one .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_two .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_three .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_four .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_five .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			p {
+				text-indent: 22px;
+			}
+			
+			span.mui-icon {
+				font-size: 14px;
+				color: #007aff;
+				margin-left: -15px;
+				padding-right: 10px;
+			}
+			
+			#middlePopover_three.mui-popover {
+				width: 80%;
+				height: 250px;
+			}
+			
+			#middlePopover_four.mui-popover {
+				width: 80%;
+				height: 250px;
+			}
+			
+			.mui-popover {
+				width: 80%;
+				height: 200px;
+			}
+			
+			.mui-content {
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+
+			<div class="title">
+				<div class="title_img">
+					<img src="img/back.png" />
+				</div>
+				<h4>ETC</h4>
+			</div>
+
+			<div class="banner">
+	<div class="mui-content">
+		<p>当前ETC费率为<span>5</span>/小时</p>
+
+		<div class="banner_list">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-collapse">
+					<img src="img/feilv.png" />
+					<a class="mui-navigate-right" href="#">
+						ETC费率为设置
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell feilv_li">
+							<div class="feilv">
+								<span>费率:</span>
+								<div class="etc_fl">
+									<select class="se">
+										<option value="item-1">请选择</option>
+										<option value="item-1">item-1</option>
+										<option value="item-2">item-2</option>
+										<option value="item-3">item-3</option>
+										<option value="item-4">item-4</option>
+										<option value="item-5">item-5</option>
+									</select>
+								</div>
+								<input type="" name="" id="" value="费率" />
+			                            <button type="submit">查询</button>
+										</div>
+									</li>
+								</ul>
+
+							</li>
+
+							<li class="mui-table-view-cell banner_list_li">
+								<div class="mui-content-padded banner_list_div">
+									<img src="img/heimingdan.png" />
+									<a href="#middlePopover_one" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+										&nbsp;&nbsp;&nbsp;&nbsp;黑名单设置
+									</a>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell banner_list_li">
+								<div class="mui-content-padded banner_list_div">
+									<img src="img/xingxichaxun.png" />
+									<a href="#middlePopover_one" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+										&nbsp;&nbsp;&nbsp;&nbsp;ETC信息查询
+									</a>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="middlePopover_one" class="mui-popover content_setting">
+				<p>黑名单下发</p>
+				<hr />
+
+				<div class="heimingdan">
+					<div class="mui-radio mui-left setting_radio1">
+						<label>一号小车</label>
+						<input name="radio1" type="radio">
+					</div>
+					<div class="mui-radio mui-left setting_radio2">
+						<label>二号小车</label>
+						<input name="radio1" type="radio" checked>
+					</div>
+					<div class="mui-radio mui-left setting_radio2">
+						<label>三号小车</label>
+						<input name="radio1" type="radio" checked>
+					</div>
+					<div class="mui-radio mui-left setting_radio4">
+						<label>四号小车</label>
+						<input name="radio1" type="radio" checked>
+					</div>
+
+				</div>
+				<hr />
+				<div class="setting_btn11">
+					<button type="submit">取消</button>
+
+				</div>
+				<div class="setting_btn22">
+					<button type="submit">确定</button>
+
+				</div>
+			</div>
+
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

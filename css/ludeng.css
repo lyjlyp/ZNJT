@@ -1,0 +1,255 @@
+body{
+	margin: 0px;
+	background-color: #EFEFF4;
+}
+.main{
+	width: 100%;
+	height: 100%;
+}
+/*==================title start====================*/
+.title{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: deepskyblue;
+}
+.title_img{
+	position: absolute;
+	width: 20%;
+	height:100%;
+	float: left;
+	margin-top: 13px;
+	margin-left: 10px;
+	font-weight: normal;
+	
+}
+h4{
+	color: white;
+	text-align: center;
+	padding-top: 15px;
+}
+
+/*==================title end====================*/
+
+/*==================banner start====================*/
+.banner{
+	width: 100%;
+	height: 550px;
+	position:relative;
+	float: left;
+}
+.banner_list a{
+	border: none;
+	font-size: 16px;
+	color: #000000!important;
+	margin: 0!important;
+	text-align: left;
+	
+}
+.mui-content{
+	padding: 0!important;
+}
+.banner_list_div{
+	margin: 0!important;
+}
+.banner_list_li{
+	padding: 0!important;	
+	height: 50px;
+	text-align: left;
+	
+}
+
+
+/*==================banner end====================*/
+.content_zhuangtai p{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	color: #000000;
+	font-size:18px;
+	margin-top: 15px;
+}
+
+.se{
+	position: relative;
+	float: left;
+	height: 50px;
+	width:80%;
+	
+	
+}
+
+.se select{
+	height: 50px;
+	width: 70%;
+	font-size: 15px;
+	border: 2px solid #EFEFF4;
+	border-radius: 10px;
+	
+	
+	margin-left: 25px;
+}
+button{
+	height: 45px;
+	width: 18%;
+	position: relative;
+	float: left;
+	right: 25px;
+	margin-top: 10px;
+	background-color:#BBBBBB!important;
+	border-radius: 10px!important;
+	
+}
+.zhuangtai{
+	margin-top: 5px;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.zhuangtai p{
+	
+	font-size: 16px;
+}
+
+/*======================================*/
+
+
+.content_zhuangtai2 p{
+	width: 100%;
+	height: 40px!important;
+	margin: 0;
+	color: #000000;
+	font-size:18px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+}
+.se2{
+	position: relative;
+	float: left;
+	height: 50px;
+	width:90%;
+	left: 18px;
+	
+}
+
+.se2 select{
+	height: 50px;
+	width: 75%;
+	font-size: 15px;
+	border: 2px solid #EFEFF4;
+	border-radius: 10px;
+	margin-left: 25px;
+}
+
+.setting_moshi2{
+	font-size: 15px;
+	width: 100%;
+	position: relative;
+	float: left;
+}
+.setting_moshi2 input{
+	margin-top: -10px;
+
+}
+.setting_radio1{
+	position: relative;
+	width: 45%;
+	margin: 0!important;
+	float: right;
+	
+}
+.setting_radio2{
+	position: relative;
+	width: 45%;
+	margin: 0!important;
+	float: left;
+}
+.setting_btn1{
+	position: relative;
+	float: left;
+	width: 50%;
+	margin-top: 15px;
+}
+.setting_btn2{
+	position: relative;
+	float: left;
+	width: 50%;
+	margin-top:15px;
+}
+.setting_btn1 button{
+	width: 40%;
+	float: right;
+	height: 40px;
+}
+.setting_btn2 button{
+	width: 40%;
+	background: #6641E2!important;
+	float: left;
+	left: 10px;
+	height: 40px;
+}
+
+
+/*======================================*/
+
+
+
+.content_setting p{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	color: #000000;
+	font-size:18px;
+	margin-top: 15px;
+}
+.setting_moshi{
+	font-size: 15px;
+	width: 100%;
+	position: relative;
+	float: left;
+}
+.setting_moshi input{
+	margin-top: -10px;
+
+}
+.setting_radio1{
+	position: relative;
+	width: 45%;
+	margin: 0!important;
+	float: left;
+	
+}
+.setting_radio2{
+	position: relative;
+	width: 45%;
+	margin: 0!important;
+	float: left;
+}
+.setting_btn11{
+	position: relative;
+	float: left;
+	width: 50%;
+	margin-top: 30px;
+}
+.setting_btn22{
+	position: relative;
+	float: left;
+	width: 50%;
+	margin-top:30px;
+}
+.setting_btn11 button{
+	width: 40%;
+	float: right;
+	height: 40px;
+}
+.setting_btn22 button{
+	width: 40%;
+	background: #6641E2!important;
+	float: left;
+	left: 10px;
+	height: 40px;
+}
+

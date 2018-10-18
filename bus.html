@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link rel="stylesheet" href="css/bus.css" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style type="text/css">
+			#list {
+				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
+				margin-top: -1px;
+			}
+			
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#middlePopover_one .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_two .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_three .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_four .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_five .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			p {
+				text-indent: 22px;
+			}
+			
+			span.mui-icon {
+				font-size: 14px;
+				color: #007aff;
+				margin-left: -15px;
+				padding-right: 10px;
+			}
+			
+			#middlePopover_one.mui-popover {
+				width: 80%;
+				height: 150px;
+			}
+			
+			.mui-popover {
+				width: 80%;
+				height: 200px;
+			}
+			
+			.mui-content {
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+
+			<div class="title">
+				<div class="title_img">
+					<img src="img/back.png" />
+				</div>
+				<h4>公交</h4>
+			</div>
+
+			<div class="banner">
+				<p></p>
+				<div class="banner_list">
+					<div class="mui-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell banner_list_li">
+
+								<div class="mui-content-padded banner_list_div">
+									<p style="text-indent: 0;">
+										<a href="#middlePopover_one" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+											&nbsp;&nbsp;&nbsp;&nbsp;查询公交站台信息
+										</a>
+									</p>
+								</div>
+
+							</li>
+							<li class="mui-table-view-cell banner_list_li">
+
+								<div class="mui-content-padded banner_list_div">
+									<p style="text-indent: 0;">
+										<a href="#middlePopover_two" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+											&nbsp;&nbsp;&nbsp;&nbsp;查询公交位置
+										</a>
+								</div>
+
+							</li>
+							<li class="mui-table-view-cell banner_list_li">
+
+								<div class="mui-content-padded banner_list_div">
+									<p style="text-indent: 0;">
+										<a href="#middlePopover_three" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+											&nbsp;&nbsp;&nbsp;&nbsp;查询路况
+										</a>
+									</p>
+								</div>
+							</li>
+							<li class="mui-table-view-cell banner_list_li">
+
+								<div class="mui-content-padded banner_list_div">
+									<p style="text-indent: 0;">
+										<a href="#middlePopover_four" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+											&nbsp;&nbsp;&nbsp;&nbsp;查询公交车的速度
+										</a>
+									</p>
+								</div>
+							</li>
+							<li class="mui-table-view-cell banner_list_li">
+
+								<div class="mui-content-padded banner_list_div">
+									<p style="text-indent: 0;">
+										<a href="#middlePopover_five" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+											&nbsp;&nbsp;&nbsp;&nbsp;查询车载容量
+										</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="middlePopover_one" class="mui-popover">
+				<div class="bus_x">
+					<p>公交站台信息</p>
+					<hr />
+				</div>
+
+				<div class="se">
+					<select class="">
+						<option value="item-1">请选择</option>
+						<option value="item-1">item-1</option>
+						<option value="item-2">item-2</option>
+						<option value="item-3">item-3</option>
+						<option value="item-4">item-4</option>
+						<option value="item-5">item-5</option>
+					</select>
+				</div>
+				<button type="submit">查询</button>
+			</div>
+
+			<div id="middlePopover_two" class="mui-popover">
+				<div class="bus_w">
+					<p>公交位置</p>
+					<hr />
+				</div>
+
+				<div class="se">
+					<select class="">
+						<option value="item-1">1号公交车</option>
+						<option value="item-2">item-2</option>
+						<option value="item-3">item-3</option>
+						<option value="item-4">item-4</option>
+						<option value="item-5">item-5</option>
+					</select>
+				</div>
+				<button type="submit">查询</button>
+				<div class="weizhi">
+					<p><span>1号公交</span>位置：<span></span></p>
+				</div>
+			</div>
+
+			<div id="middlePopover_three" class="mui-popover">
+				<div class="bus_l">
+					<p>路况</p>
+					<hr />
+				</div>
+
+				<div class="se">
+					<select class="">
+						<option value="item-1">1号公路</option>
+						<option value="item-2">item-2</option>
+						<option value="item-3">item-3</option>
+						<option value="item-4">item-4</option>
+						<option value="item-5">item-5</option>
+					</select>
+				</div>
+				<button type="submit">查询</button>
+				<div class="lukuang">
+					<p><span>1号公路</span>路况：<span></span></p>
+				</div>
+			</div>
+
+			<div id="middlePopover_four" class="mui-popover">
+				<div class="bus_s">
+					<p>公交速度</p>
+					<hr />
+				</div>
+
+				<div class="se">
+					<select class="">
+						<option value="item-1">请选择</option>
+						<option value="item-1">item-1</option>
+						<option value="item-2">item-2</option>
+						<option value="item-3">item-3</option>
+						<option value="item-4">item-4</option>
+						<option value="item-5">item-5</option>
+					</select>
+				</div>
+				<button type="submit">查询</button>
+				<div class="sudu">
+					<p><span>暂无速度</span></p>
+				</div>
+			</div>
+
+			<div id="middlePopover_five" class="mui-popover">
+				<div class="bus_r">
+					<p>车载容量</p>
+					<hr />
+				</div>
+
+				<div class="se">
+					<select class="">
+						<option value="item-1">1号公交车</option>
+						<option value="item-2">item-2</option>
+						<option value="item-3">item-3</option>
+						<option value="item-4">item-4</option>
+						<option value="item-5">item-5</option>
+					</select>
+				</div>
+				<button type="submit">查询</button>
+				<div class="rongliang">
+					<p><span>1号公交车</span>车载容量：<span></span></p>
+				</div>
+			</div>
+
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

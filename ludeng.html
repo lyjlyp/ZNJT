@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link rel="stylesheet" href="css/ludeng.css" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style type="text/css">
+			#list {
+				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
+				margin-top: -1px;
+			}
+			
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			#middlePopover_one .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_two .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			#middlePopover_three .mui-popover-arrow {
+				visibility: hidden;
+			}
+			
+			p {
+				text-indent: 22px;
+			}
+			
+			span.mui-icon {
+				font-size: 14px;
+				color: #007aff;
+				margin-left: -15px;
+				padding-right: 10px;
+			}
+			
+			.mui-popover {
+				width: 80%;
+				height: 200px;
+			}
+			
+			.mui-content {
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+
+			<div class="title">
+				<div class="title_img">
+					<img src="img/back.png" />
+				</div>
+				<h4>路灯</h4>
+			</div>
+
+			<div class="banner">
+				<p></p>
+				<div class="banner_list">
+					<div class="mui-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell banner_list_li">
+
+								<div class="mui-content-padded banner_list_div">
+									<p style="text-indent: 0;">
+										<a href="#middlePopover_one" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+											&nbsp;&nbsp;&nbsp;&nbsp;查询路灯状态
+										</a>
+									</p>
+								</div>
+
+							</li>
+							<li class="mui-table-view-cell banner_list_li">
+
+								<div class="mui-content-padded banner_list_div">
+									<p style="text-indent: 0;">
+										<a href="#middlePopover_two" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+											&nbsp;&nbsp;&nbsp;&nbsp;手动设置
+										</a>
+								</div>
+
+							</li>
+							<li class="mui-table-view-cell banner_list_li">
+
+								<div class="mui-content-padded banner_list_div">
+									<p style="text-indent: 0;">
+										<a href="#middlePopover_three" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+											&nbsp;&nbsp;&nbsp;&nbsp;设置模式
+										</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div id="middlePopover_one" class="mui-popover content_zhuangtai">
+			<p>路灯状态</p>
+			<div class="se">
+				<select class="">
+					<option value="item-1">请选择</option>
+					<option value="item-1">item-1</option>
+					<option value="item-2">item-2</option>
+					<option value="item-3">item-3</option>
+					<option value="item-4">item-4</option>
+					<option value="item-5">item-5</option>
+				</select>
+			</div>
+			<button type="submit">查询</button>
+			<div class="zhuangtai">
+				<p><span>一号路灯</span>当前的状态：<span>Close</span></p>
+			</div>
+		</div>
+		
+		
+		
+		<div id="middlePopover_two" class="mui-popover content_zhuangtai2">
+			<p>手动设置</p>
+			<div class="se2">
+				<select class="">
+					<option value="item-1">请选择</option>
+					<option value="item-1">item-1</option>
+					<option value="item-2">item-2</option>
+					<option value="item-3">item-3</option>
+					<option value="item-4">item-4</option>
+					<option value="item-5">item-5</option>
+				</select>
+			</div>
+			
+			<div class="setting_moshi2">
+				<div class="mui-radio mui-left setting_radio1">
+					<label>开</label>
+					<input name="radio1" type="radio">
+				</div>
+				<div class="mui-radio mui-left setting_radio2">
+					<label>关</label>
+					<input name="radio1" type="radio" checked>
+				</div>
+
+			</div>
+			
+			<div class="setting_btn1">
+				<button type="submit">取消</button>
+
+			</div>
+			<div class="setting_btn2">
+				<button type="submit">确定</button>
+
+			</div>
+		</div>
+		
+		
+
+		<div id="middlePopover_three" class="mui-popover content_setting">
+			<p>设置模式</p>
+
+			<div class="setting_moshi">
+				<div class="mui-radio mui-left setting_radio1">
+					<label>手动</label>
+					<input name="radio1" type="radio">
+				</div>
+				<div class="mui-radio mui-left setting_radio2">
+					<label>自动</label>
+					<input name="radio1" type="radio" checked>
+				</div>
+
+			</div>
+			<div class="setting_btn11">
+				<button type="submit">取消</button>
+
+			</div>
+			<div class="setting_btn22">
+				<button type="submit">确定</button>
+
+			</div>
+		</div>
+
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

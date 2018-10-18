@@ -1,0 +1,123 @@
+body{
+	margin: 0px;
+}
+.main{
+	width: 100%;
+	height: 100%;
+}
+/*==================title start====================*/
+.title{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: deepskyblue;
+}
+h4{
+	margin: 0px;
+	color: white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+/*==================title end====================*/
+
+/*==================home start====================*/
+.home{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	margin-top: 50px;
+}
+
+.home_img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url(../img/bg.png);
+}
+.home_content{
+	margin-top: 185px;
+	position: relative;
+	width:100%;
+}
+.home_ul{
+	text-align: center;
+	padding: 0;
+	width:24%;
+	float: left;
+	font-size: 13px;
+}
+.home_ul li{
+	margin-top: 6px;
+	list-style-type: none;
+	color: #000;
+}
+.home_item{
+	text-align: left;
+	padding-left: 10px;
+}
+
+/*==================home end====================*/
+
+.bg{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 15px;
+	background: #EFEFF4;
+}
+/*==================icon start====================*/
+.icon{
+	width: 100%;
+	height: 180px;
+	position: relative;
+	float: left;
+}
+.icon ul{
+	margin: 0;
+}
+.icon li{
+	font-size: 14px;
+	margin: 15px 0 0 0;
+	list-style-type: none;
+	width: 25%;
+	float: left;
+}
+.icon li a{
+	color: #000000;
+	text-decoration: none;
+}
+/*==================icon end====================*/
+.bg2{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 55px;
+	background: #EFEFF4;
+}
+/*==================bottom start====================*/
+.bottom{
+	width: 100%;
+	
+}
+.bottom li{
+	text-align: center;
+	list-style-type: none;
+	width: 30%;
+	float: left;
+	margin-top: 10px;
+	
+}
+.bottom ul{
+	margin: 0;
+}
+.bottom li a{
+	
+	text-decoration: none;
+	color: #000000;
+	font-size: 13px;
+}
+/*==================bottom end====================*/
