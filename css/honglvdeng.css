@@ -40,42 +40,40 @@ h4{
 }
 .banner_list{
 	width: 100%;
-	
 	position:relative;
 	float: left;
+}
+.banner_list_honglvdeng{
+	background: white!important;
 }
 
 .honglvdeng_zhuangtai{
 	width: 100%;
 }
-.se{
+.honglvdeng_se{
 	position: relative;
 	float: left;
-	height: 50px;
-	width:80%;
-	margin-top: 5px;
-	
+	height: 40px;
+	width:70%;
 }
 
-.se select{
-	height: 50px;
+.honglvdeng_se select{
+	height: 40px;
 	width: 70%;
-	font-size: 15px;
+	font-size: 14px;
 	border: 2px solid #EFEFF4;
-	border-radius: 10px;
-	
-	
-	margin-left: 25px;
+	border-radius: 5px;
+	background:#BBBBBB!important ;
 }
 button{
-	height: 45px;
+	height: 40px;
 	width: 18%;
 	position: relative;
 	float: left;
 	right: 25px;
-	margin-top: 7px!important;
+
 	background-color:#BBBBBB!important;
-	border-radius: 10px!important;
+	border-radius: 5px!important;
 	
 }
 

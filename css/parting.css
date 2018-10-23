@@ -181,3 +181,52 @@ h4{
 	left: 10px;
 	height: 40px;
 }
+
+
+.feilv{
+	background: #efeff4;
+}
+.feilv span{
+	position: relative;
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.feilv input{
+	position: relative;
+	float: left;
+	width: 120px;
+	margin-top: 12px;
+	height: 30px;
+	margin-left: 5px;
+}
+
+.parting_fl{
+	position: relative;
+	float: left;
+	height: 35px;
+	margin-left: 5px;
+	width:150px;
+}
+.parting_fl select{
+	height: 35px;
+	width: 100%;
+	font-size: 13px;
+	border: 2px solid #EFEFF4;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0;
+	margin-top: 9px;
+
+}
+button{
+	height: 30px;
+	width: 12%;
+	position: relative;
+	float: left;
+	left: 5px;
+	margin-top: 10px!important;
+	background-color:#BBBBBB!important;
+	border-radius: 10px!important;
+	
+}

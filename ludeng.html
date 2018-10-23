@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ludengApp">
 
 	<head>
 		<meta charset="utf-8">
@@ -9,6 +9,7 @@
 		<title></title>
 		<link rel="stylesheet" href="css/ludeng.css" />
 		<link rel="stylesheet" href="css/mui.min.css">
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			#list {
 				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
@@ -22,6 +23,7 @@
 			.plus {
 				display: none;
 			}
+			
 			#middlePopover_one .mui-popover-arrow {
 				visibility: hidden;
 			}
@@ -57,7 +59,7 @@
 	</head>
 
 	<body>
-		<div class="main">
+		<div class="main" ng-controller="ludengCtrl as ctrl">
 
 			<div class="title">
 				<div class="title_img">
@@ -113,36 +115,36 @@
 		<div id="middlePopover_one" class="mui-popover content_zhuangtai">
 			<p>路灯状态</p>
 			<div class="se">
-				<select class="">
-					<option value="item-1">请选择</option>
-					<option value="item-1">item-1</option>
-					<option value="item-2">item-2</option>
-					<option value="item-3">item-3</option>
-					<option value="item-4">item-4</option>
-					<option value="item-5">item-5</option>
+				<select class="select1">
+					<option value="1号路灯">1号路灯</option>
+					<option value="2号路灯">2号路灯</option>
+					<option value="3号路灯">3号路灯</option>
+					<option value="4号路灯">4号路灯</option>
+					<option value="4号路灯">5号路灯</option>
+					<option value="6号路灯">6号路灯</option>
+					<option value="7号路灯">7号路灯</option>
 				</select>
 			</div>
-			<button type="submit">查询</button>
+			<button type="button" id="button1">查询</button>
 			<div class="zhuangtai">
-				<p><span>一号路灯</span>当前的状态：<span>Close</span></p>
+				<p><span class="select1_span">一号路灯</span>当前的状态：<span>Close</span></p>
 			</div>
 		</div>
-		
-		
-		
+
 		<div id="middlePopover_two" class="mui-popover content_zhuangtai2">
 			<p>手动设置</p>
 			<div class="se2">
 				<select class="">
-					<option value="item-1">请选择</option>
-					<option value="item-1">item-1</option>
-					<option value="item-2">item-2</option>
-					<option value="item-3">item-3</option>
-					<option value="item-4">item-4</option>
-					<option value="item-5">item-5</option>
+					<option value="1号路灯">1号路灯</option>
+					<option value="2号路灯">2号路灯</option>
+					<option value="3号路灯">3号路灯</option>
+					<option value="4号路灯">4号路灯</option>
+					<option value="4号路灯">5号路灯</option>
+					<option value="6号路灯">6号路灯</option>
+					<option value="7号路灯">7号路灯</option>
 				</select>
 			</div>
-			
+
 			<div class="setting_moshi2">
 				<div class="mui-radio mui-left setting_radio1">
 					<label>开</label>
@@ -154,7 +156,7 @@
 				</div>
 
 			</div>
-			
+
 			<div class="setting_btn1">
 				<button type="submit">取消</button>
 
@@ -164,8 +166,6 @@
 
 			</div>
 		</div>
-		
-		
 
 		<div id="middlePopover_three" class="mui-popover content_setting">
 			<p>设置模式</p>
@@ -192,9 +192,44 @@
 		</div>
 
 		</div>
-		<script src="js/mui.min.js"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			mui.init()
+		</script>
+		<script type="text/javascript">
+			var ludengApp = angular.module("ludengApp", []);
+			ludengApp.controller("ludengCtrl", ["$http", "$window", function($http, $window) {
+				var ludeng = this;
+				//提交要查询的路灯号数
+				$("#button1").click(function() {
+					var select1 = $(".select1 option:selected").val();
+					$(".select1_span").html(select1);
+					
+					
+					//获取登录界面输入的ip
+				ludeng.ip = $window.localStorage["ip_input"];
+
+				$http({
+					method: "POST",
+					url: "http://" + ludeng.ip + "/type/jason/action/GetRoadLightStatus",
+					data: {
+						"RoadLightId": 1
+					},
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded'
+					}
+				}).then(function success(resp) {
+					alert(data);
+
+				}, function error(resp) {
+
+				});
+
+				});
+				
+
+			}]);
 		</script>
 	</body>
 

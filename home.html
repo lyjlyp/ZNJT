@@ -1,13 +1,14 @@
 <!doctype html>
-<html>
+<html ng-app="homeApp">
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			#list {
 				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
@@ -18,7 +19,7 @@
 
 	<body>
 		<!--main start-->
-		<div class="main">
+		<div class="main" ng-controller="homeCtrl as ctrl">
 
 			<div class="title">
 				<h4>智能交通</h4>
@@ -38,8 +39,8 @@
 						<li class="mui-table-view-cell">公交车数量：</li>
 						<hr />
 						<li class="mui-table-view-cell">ETC当前费率：</li>
-					</ul>	
-				
+					</ul>
+
 					<ul class="mui-table-view home_ul">
 						<li class="mui-table-view-cell">3</li>
 						<hr />
@@ -47,7 +48,7 @@
 						<hr />
 						<li class="mui-table-view-cell">5</li>
 					</ul>
-				
+
 					<ul class="mui-table-view home_ul">
 						<li class="mui-table-view-cell">空闲车位：</li>
 						<hr />
@@ -55,7 +56,7 @@
 						<hr />
 						<li class="mui-table-view-cell">路灯状态：</li>
 					</ul>
-				
+
 					<ul class="mui-table-view home_ul">
 						<li class="mui-table-view-cell">2</li>
 						<hr />
@@ -64,67 +65,157 @@
 						<li class="mui-table-view-cell">Close</li>
 					</ul>
 
-			</div>
-			<!--home end-->
-			<div class="bg">
+				</div>
+				<!--home end-->
+				<div class="bg">
+
+				</div>
+				<!--icon start-->
+				<div class="icon">
+					<ul class="mui-table-view mui-grid-view mui-grid-9">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li1">
+							<a href="#">
+								<img src="img/setc.png" width="50px" height="50px" />
+								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;ETC</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li2">
+							<a href="#">
+								<img src="img/tingchechang.png" width="50px" height="50px" />
+								<div class="mui-media-body">&nbsp;停车场</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li3">
+							<a href="#">
+								<img src="img/xiaoche.png" width="50px" height="50px" />
+								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;小车</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li4">
+							<a href="#">
+								<img src="img/bus.png" width="50px" height="50px" />
+								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;公交</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li5">
+							<a href="#">
+								<img src="img/huanjing.png" width="50px" height="50px" />
+								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;环境</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li6">
+							<a href="#">
+								<img src="img/hongludeng.png" width="50px" height="50px" />
+								<div class="mui-media-body">&nbsp;红绿灯</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li7">
+							<a href="#">
+								<img src="img/ludeng.png" width="50px" height="50px" />
+								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;路灯</div>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+				<!--icon end-->
+
+				<div class="bg2">
+
+				</div>
+
 				
-			</div>
-			<!--icon start-->
-			<div class="icon">
-				<ul class="mui-table-view mui-grid-view mui-grid-9">
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/setc.png" width="50px" height="50px"/>
-		                    <div class="mui-media-body">&nbsp;&nbsp;&nbsp;ETC</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/tingchechang.png" width="50px" height="50px"/>
-		                    <div class="mui-media-body">&nbsp;停车场</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/xiaoche.png" width="50px" height="50px"/>
-		                    <div class="mui-media-body">&nbsp;&nbsp;&nbsp;小车</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/bus.png" width="50px" height="50px"/>
-		                    <div class="mui-media-body">&nbsp;&nbsp;&nbsp;公交</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/huanjing.png" width="50px" height="50px"/>
-		                    <div class="mui-media-body">&nbsp;&nbsp;&nbsp;环境</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/hongludeng.png" width="50px" height="50px"/>
-		                    <div class="mui-media-body">&nbsp;红绿灯</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                   <img src="img/ludeng.png" width="50px" height="50px"/>
-		                    <div class="mui-media-body">&nbsp;&nbsp;&nbsp;路灯</div></a></li>
-		      
-		        </ul>		
-				
-			</div>
-			<!--icon end-->
-			
-			<div class="bg2">
-	
-			</div>
-			
-			<!--bottom start-->
+				<!--bottom start-->
 			<div class="bottom">
 				<ul class="mui-table-view mui-grid-view mui-grid-9">
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/icon_home_nor.png" width="20px" height="20px"/>
-		                    <div class="mui-media-body">首页</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/icon_meassage_nor.png" width="20px" height="20px"/>
-		                    <div class="mui-media-body">设置</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-		                    <img src="img/icon_more_nor.png" width="20px" height="20px"/>
-		                    <div class="mui-media-body">关于</div></a></li>
-		      
-		        </ul>	
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li1">
+						<a href="#">
+							<img src="img/icon_home_nor.png" width="20px" height="20px" />
+							<div class="mui-media-body">首页</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li2">
+						<a href="#">
+							<img src="img/icon_meassage_nor.png" width="20px" height="20px" />
+							<div class="mui-media-body">设置</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li3">
+						<a href="#">
+							<img src="img/icon_more_nor.png" width="20px" height="20px" />
+							<div class="mui-media-body">关于</div>
+						</a>
+					</li>
+
+				</ul>
 			</div>
 			<!--bottom end-->
-		</div>
-		<!--main end-->
-		<script src="js/mui.js"></script>
-		<script type="text/javascript">
-			mui.init()
-		</script>
+			
+			</div>
+			<!--main end-->
+			<script src="js/mui.js"></script>
+			<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				mui.init()
+			</script>
+			<script type="text/javascript">
+				var homeApp = angular.module("homeApp", []);
+//				homeApp.directive("myBottom",function(){
+//					return{
+//						restrict:"AEC",
+//						templateUrl:"bottom.html"
+//					}
+//						
+//					});
+				homeApp.controller("homeCtrl", ['$http', '$window', function($http, $window) {
+					var home = this;
+					//从登录页面传过来的ip
+					home.ip = $window.localStorage["ip_input"];
+
+					$(".home_li1").click(function() {
+						$window.location.href = "ETC.html";
+					});
+					$(".home_li2").click(function() {
+						$window.location.href = "parting.html";
+					});
+					$(".home_li3").click(function() {
+						$window.location.href = "smallCar.html";
+					});
+					$(".home_li4").click(function() {
+						$window.location.href = "bus.html";
+					});
+					$(".home_li5").click(function() {
+						$window.location.href = "environment.html";
+					});
+					$(".home_li6").click(function() {
+						$window.location.href = "honglvdeng.html";
+					});
+					$(".home_li7").click(function() {
+						$window.location.href = "ludeng.html";
+					});
+
+					$(".bottom_li1").click(function() {
+						$window.location.href = "home.html";
+					});
+					$(".bottom_li2").click(function() {
+						$window.location.href = "setting.html";
+					});
+					$(".bottom_li3").click(function() {
+						$window.location.href = "about.html";
+					});
+					
+					
+
+					//				$http({}).then(function success(resp){
+					//					method:"POST",
+					//					
+					//				},function error(resp){
+					//					
+					//				});
+
+				}]);
+			</script>
 	</body>
 
 </html>

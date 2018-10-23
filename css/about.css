@@ -47,11 +47,11 @@ h4 {
 /*==================bottom start====================*/
 
 .bottom {
-
 	width: 100%;
-	position: relative;
+	position: fixed;
 	float: left;
 	height: 80px;
+	bottom: 0px;
 }
 
 .bottom li {
@@ -62,7 +62,7 @@ h4 {
 	width: 33.3%;
 	float: left;
 	margin-top: 10px;
-}
+}	
 .bottom ul {
 	margin: 0;
 }

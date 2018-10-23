@@ -6,21 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<title></title>
+		<title>登录</title>
 		<link rel="stylesheet" href="css/login.css" />
 		<link rel="stylesheet" href="css/mui.min.css">
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			#list {
 				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
 				margin-top: -1px;
 			}
 		</style>
-		<script type="text/javascript">
-			document.addEventListener('plusready', function() {
-				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-
-			});
-		</script>
 	</head>
 
 	<body>
@@ -33,15 +28,37 @@
 				<p>欢迎您，请先设置服务器IP</p>
 				<span></span>
 				<div class="login_input">
-					<input type="text" class="mui-input-clear" placeholder="请输入设备上显示的IP地址" data-input-clear="3">
+					<input type="text" class="mui-input-clear ip_input" placeholder="请输入设备上显示的IP地址" data-input-clear="3">
 				</div>
 				<span></span>
-				<button type="button" class="login_btn">确定</button>
+				<button type="button" class="login_btn" click="submit()">确定</button>
 
 			</div>
 			<!--login end-->
 		</div>
 		<!--main end-->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+					//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+				}
+
+			);
+			$("button").click(function(){
+				var ip_input=$(".ip_input").val();
+			    var ip="192.168.43.30";
+			    
+			if(ip_input==ip){
+				$(location).attr('href', 'home.html');
+			}else{
+				alert("请输入正确的ip");
+			}
+			});
+			
+			
+			
+			
+		</script>
 	</body>
 
 </html>

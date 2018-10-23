@@ -43,13 +43,14 @@ body{
 .login_btn{
 	position:absolute ;
 	float: left;
-	left: 16px;
-	width: 90%;
+	width:90%;
 	height: 40px;
 	margin-top: 20px;
 	border-radius: 5px;
 	background-color: #23c885;
 	color: white;
+	text-align: center;
+	margin-left: 16px;
 }
 span{
 	left: 15px;

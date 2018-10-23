@@ -57,3 +57,150 @@ h4{
 	float: left;
 	margin-top: 20px;
 }
+
+.environment_one span:nth-child(1){
+	width: 33%;
+	position: relative;
+	float: left;
+	color: #B6B6B6;
+}
+.environment_one span:nth-child(2){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: center;
+	color: #B6B6B6;
+	
+}
+.environment_one span:nth-child(3){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: right;
+	
+}
+
+
+.environment_two span:nth-child(1){
+	width: 33%;
+	position: relative;
+	float: left;
+	color: #B6B6B6;
+}
+.environment_two span:nth-child(2){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: center;
+	color: #B6B6B6;
+}
+.environment_two span:nth-child(3){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: right;
+}
+
+.environment_three span:nth-child(1){
+	width: 33%;
+	position: relative;
+	float: left;
+	color: #B6B6B6;
+}
+.environment_three span:nth-child(2){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: center;
+	color: #B6B6B6;
+}
+.environment_three span:nth-child(3){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: right;
+}
+
+.environment_four span:nth-child(1){
+	width: 33%;
+	position: relative;
+	float: left;
+	color: #B6B6B6;
+}
+.environment_four span:nth-child(2){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: center;
+	color: #B6B6B6;
+}
+.environment_four span:nth-child(3){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: right;
+	
+}
+
+.environment_five span:nth-child(1){
+	width: 33%;
+	position: relative;
+	float: left;
+	color: #B6B6B6;
+}
+.environment_five span:nth-child(2){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: center;
+	color: #B6B6B6;
+}
+.environment_five span:nth-child(3){
+	width: 33%;
+	position: relative;
+	float: left;
+	text-align: right;
+}
+
+
+.environment_six span:nth-child(2){
+	width: 33%;
+	position: relative;
+	text-align: center;
+	margin-right: 5px;
+
+}
+.banner_list_four{
+	width: 100%;
+	position: relative;
+	float: left;
+}
+li.environment_seven{
+	padding: 0;
+	
+}
+.environment_li{
+	background: white!important;
+}
+.banner_one_li span{
+	color: #B6B6B6;
+}
+.banner_one_li input{
+	width: 40%;
+	margin-left: 10px;
+	color: #B6B6B6;
+	border-radius: 5px;
+}
+.banner_two_li input{
+	width: 40%;
+	margin-left: 10px;
+	color: #B6B6B6;
+	margin-left: 95px;
+	border-radius: 5px;
+}
+.banner_two_li button{
+	 height: 26px!important;
+	 margin-left: 20px;
+	 background: #6641E2;
+	 color: white;
+}

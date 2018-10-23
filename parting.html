@@ -14,6 +14,7 @@
 				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
 				margin-top: -1px;
 			}
+			
 			.mui-plus .plus {
 				display: inline;
 			}
@@ -21,6 +22,7 @@
 			.plus {
 				display: none;
 			}
+			
 			#middlePopover_one.mui-popover {
 				width: 80%;
 				height: 300px;
@@ -37,9 +39,11 @@
 			#middlePopover_three .mui-popover-arrow {
 				visibility: hidden;
 			}
+			
 			#middlePopover_four .mui-popover-arrow {
 				visibility: hidden;
 			}
+			
 			#middlePopover_five .mui-popover-arrow {
 				visibility: hidden;
 			}
@@ -54,6 +58,7 @@
 				margin-left: -15px;
 				padding-right: 10px;
 			}
+			
 			#middlePopover_three.mui-popover {
 				width: 80%;
 				height: 250px;
@@ -87,9 +92,8 @@
 
 			<div class="banner">
 				<p>当前费率为&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-					<span>5</span>/小时
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				当前空闲车位&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2</span>
+					<span>5</span>/小时 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当前空闲车位&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>2</span>
 				</p>
 
 				<div class="banner_list">
@@ -100,44 +104,54 @@
 								停车场费率为设置
 							</a>
 							<ul class="mui-table-view mui-table-view-chevron">
-								<li class="mui-table-view-cell">
-									<div class="feilv">
-										费率:
-									</div>
-								</li>
-							</ul>
+									<li class="mui-table-view-cell feilv_li">
+										<div class="feilv">
+											<span>费率:</span>
+											<div class="parting_fl">
+												<select class="se">
+													<option value="item-1">请选择</option>
+													<option value="item-1">item-1</option>
+													<option value="item-2">item-2</option>
+													<option value="item-3">item-3</option>
+													<option value="item-4">item-4</option>
+													<option value="item-5">item-5</option>
+												</select>
+											</div>
+											<input type="" name="" id="" value="费率" />
+											<button type="submit">查询</button>
+										</div>
+									</li>
+								</ul>
 
 						</li>
 
-						
 						<li class="mui-table-view-cell banner_list_li">
-								<div class="mui-content-padded banner_list_div">
-										<img src="img/heimingdan.png" />
-										<a href="#middlePopover_one" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
-											&nbsp;&nbsp;&nbsp;&nbsp;黑名单设置
-										</a>
-								</div>
+							<div class="mui-content-padded banner_list_div">
+								<img src="img/heimingdan.png" />
+								<a href="#middlePopover_one" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+									&nbsp;&nbsp;&nbsp;&nbsp;黑名单设置
+								</a>
+							</div>
 						</li>
-						
-						
+
 						<li class="mui-table-view-cell banner_list_li">
-								<div class="mui-content-padded banner_list_div">
-										<img src="img/xingxichaxun.png" />
-										<a href="#middlePopover_one" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
-											&nbsp;&nbsp;&nbsp;&nbsp;停车日志查询
-										</a>
-								</div>
+							<div class="mui-content-padded banner_list_div">
+								<img src="img/xingxichaxun.png" />
+								<a href="#middlePopover_one" class="mui-navigate-right mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+									&nbsp;&nbsp;&nbsp;&nbsp;停车日志查询
+								</a>
+							</div>
 						</li>
-					
+
 					</ul>
 				</div>
-				</div>
 			</div>
+		</div>
 
-<div id="middlePopover_one" class="mui-popover content_setting">
+		<div id="middlePopover_one" class="mui-popover content_setting">
 			<p>黑名单下发</p>
 			<hr />
-			
+
 			<div class="heimingdan">
 				<div class="mui-radio mui-left setting_radio1">
 					<label>一号小车</label>
@@ -167,7 +181,6 @@
 
 			</div>
 		</div>
-
 
 		</div>
 		<script src="js/mui.min.js"></script>
