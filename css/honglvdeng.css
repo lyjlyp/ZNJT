@@ -83,3 +83,30 @@ button{
 	position:relative;
 	float: left;
 }
+.nowzhuangtai{
+	width: 100%;
+	height: 50px;
+}
+.zhuangtai_p1 span{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.zhuangtai_p2 span{
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+}
+.zhuangtai_p3 span{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.zhuangtai_p4 span{
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+}
+

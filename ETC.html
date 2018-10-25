@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="etcApp">
 
 	<head>
 		<meta charset="utf-8">
@@ -80,12 +80,12 @@
 		</style>
 	</head>
 
-	<body>
+	<body ng-controller="atcCtrl as ctrl">
 		<div class="main">
 
 			<div class="title">
 				<div class="title_img">
-					<img src="img/back.png" />
+					<a href="home.html"><img src="img/back.png" /></a>
 				</div>
 				<h4>ETC</h4>
 			</div>
@@ -182,8 +182,31 @@
 
 		</div>
 		<script src="js/mui.min.js"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			mui.init()
+		</script>
+		<script type="text/javascript">
+			var etcApp=angular.module("etcApp",[]);
+			etcApp.controller("etcCtrl",['$http', '$window', function($http){
+				var etc=this;
+				$http({
+					method: "POST",
+					url: "http://192.168.43.30:8890/type/jason/action/GetRoadLightStatus",
+					data: {
+						"RoadLightId": 1
+					},
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded'
+					}
+				}).then(function success(resp){
+					
+				},function error(resp){
+					
+				}
+				);
+			}]);
 		</script>
 	</body>
 

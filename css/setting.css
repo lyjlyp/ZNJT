@@ -20,7 +20,7 @@ h4 {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 
@@ -86,25 +86,6 @@ h4 {
 	float: left;
 	height: 80px;
 	bottom: 0px;
-}
-
-.bottom li {
-	height: 80px;
-	background: #FFFFFF!important;
-	text-align: center;
-	list-style-type: none;
-	width: 33.3%;
-	float: left;
-	margin-top: 10px;
-}	
-.bottom ul {
-	margin: 0;
-}
-
-.bottom li a {
-	text-decoration: none;
-	color: #000000;
-	font-size: 13px;
 }
 
 

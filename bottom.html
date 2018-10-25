@@ -1,44 +1,52 @@
 <!doctype html>
-<html>
+<html ng-app="bottomApp">
 
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="css/bottom.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bottom.css" />
+
 	</head>
 
-	<body>
-		
-		<!--bottom start-->
-			<div class="bottom">
-				<ul class="mui-table-view mui-grid-view mui-grid-9">
-					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-						<a href="#">
-							<img src="img/icon_home_nor.png" width="20px" height="20px" />
-							<div class="mui-media-body">首页</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-						<a href="#">
-							<img src="img/icon_meassage_nor.png" width="20px" height="20px" />
-							<div class="mui-media-body">设置</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-						<a href="#">
-							<img src="img/icon_more_nor.png" width="20px" height="20px" />
-							<div class="mui-media-body">关于</div>
-						</a>
-					</li>
+	<body ng-controller="bottomCtrl as ctrl">
 
-				</ul>
-			</div>
-			<!--bottom end-->
+		<!--bottom start-->
+		<div class="bottom">
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li1">
+					<a href="home.html">
+						<img src="img/icon_home_nor.png" width="20px" height="20px" />
+						<div class="mui-media-body">首页</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li2">
+					<a href="setting.html">
+						<img src="img/icon_meassage_nor.png" width="20px" height="20px" />
+						<div class="mui-media-body">设置</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li3">
+					<a href="about.html">
+						<img src="img/icon_more_nor.png" width="20px" height="20px" />
+						<div class="mui-media-body">关于</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<!--bottom end-->
 		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			mui.init()
+		</script>
+		<script type="text/javascript">
+			var bottomApp = angular.module("bottomApp", []);
+
+			}]);
 		</script>
 	</body>
 

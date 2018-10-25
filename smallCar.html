@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="smallCarApp">
 
 	<head>
 		<meta charset="utf-8">
@@ -34,9 +34,11 @@
 			#middlePopover_three .mui-popover-arrow {
 				visibility: hidden;
 			}
+			
 			#middlePopover_four .mui-popover-arrow {
 				visibility: hidden;
 			}
+			
 			#middlePopover_five .mui-popover-arrow {
 				visibility: hidden;
 			}
@@ -51,6 +53,7 @@
 				margin-left: -15px;
 				padding-right: 10px;
 			}
+			
 			#middlePopover_three.mui-popover {
 				width: 80%;
 				height: 250px;
@@ -72,7 +75,7 @@
 		</style>
 	</head>
 
-	<body>
+	<body ng-controller="smallCarCtrl as ctrl">
 		<div class="main">
 
 			<div class="title">
@@ -153,38 +156,56 @@
 			</div>
 
 			<div class="se">
-				<select class="">
-					<option value="item-1">请选择</option>
-					<option value="item-1">item-1</option>
-					<option value="item-2">item-2</option>
-					<option value="item-3">item-3</option>
-					<option value="item-4">item-4</option>
-					<option value="item-5">item-5</option>
+				<select class="select_option1">
+					<option value="1号小车">1号小车</option>
+					<option value="2号小车">2号小车</option>
+					<option value="3号小车">3号小车</option>
+					<option value="4号小车">4号小车</option>
+
 				</select>
 			</div>
-			<button type="submit">查询</button>
+			<button type="submit" id="button1_car">查询</button>
 			<div class="zhuangtai">
-				<p><span>暂无速度</span></p>
+				<p><span class="span1">暂无速度</span></p>
 			</div>
 		</div>
-		
-		
+
+		<div id="middlePopover_two" class="mui-popover">
+			<div class="car_s">
+				<p>小车速度</p>
+				<hr />
+			</div>
+
+			<div class="se">
+				<select class="">
+					<option value="1号小车">1号小车</option>
+					<option value="2号小车">2号小车</option>
+					<option value="3号小车">3号小车</option>
+					<option value="4号小车">4号小车</option>
+
+				</select>
+			</div>
+			<button type="submit" id="button2_car">查询</button>
+			<div class="zhuangtai">
+				<p><span class="span2">暂无位置</span></p>
+			</div>
+		</div>
+
 		<div id="middlePopover_three" class="mui-popover car_m">
 			<p>当前余额</p>
 			<div class="se_m">
 				<select class="">
-					<option value="item-1">请选择</option>
-					<option value="item-1">item-1</option>
-					<option value="item-2">item-2</option>
-					<option value="item-3">item-3</option>
-					<option value="item-4">item-4</option>
-					<option value="item-5">item-5</option>
+					<option value="1号小车">1号小车</option>
+					<option value="2号小车">2号小车</option>
+					<option value="3号小车">3号小车</option>
+					<option value="4号小车">4号小车</option>
 				</select>
 			</div>
 			<button type="submit">查询</button>
 			<div class="chongzhi">
-				<p><span>100</span>元<span></p><button type="submit">充值</button>
-			</div><div class="tijiao">
+				<p><span>100</span>元<span></p><button type="submit" id="button_chongzhi">充值</button>
+			</div>
+			<div class="tijiao" style="display: none;">
 				<input type="result">
 				<button type="submit">提交</button>
 			</div>
@@ -199,12 +220,10 @@
 			<hr />
 			<div class="se">
 				<select class="">
-					<option value="item-1">请选择</option>
-					<option value="item-1">item-1</option>
-					<option value="item-2">item-2</option>
-					<option value="item-3">item-3</option>
-					<option value="item-4">item-4</option>
-					<option value="item-5">item-5</option>
+					<option value="1号小车">1号小车</option>
+					<option value="2号小车">2号小车</option>
+					<option value="3号小车">3号小车</option>
+					<option value="4号小车">4号小车</option>
 				</select>
 			</div>
 			<button type="submit">查询</button>
@@ -227,10 +246,63 @@
 		</div>
 
 		</div>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			mui.init()
 		</script>
+		<script type="text/javascript">
+			var smallCarApp=angular.module("smallCarApp",[]);
+			smallCarApp.controller("smallCarCtrl",["$http",function($http){
+					$("#button1_car").click(function(){
+				var select_option1 = $(".select_option1 option:selected").val();
+				
+				$http({
+					method: "POST",
+					url: "http://192.168.43.30:8890/type/jason/action/GetCarSpeed",
+					data: {"CarId":1},
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded'
+					}
+				}).then(function success(resp){
+					var carSpeed=resp.data.CarSpeed;
+					$(".span1").html(carSpeed);
+					
+				},function error(resp){
+					
+				});
+				
+			});
+			$("#button_chongzhi").click(function(){
+				$(".tijiao").toggle();
+			});
+			
+			$("#button2_car").click(function(){
+				
+				$http({
+					method: "POST",
+					url: "http://192.168.43.30:8890/type/jason/action/GetCarLocation",
+					data: {"CarId":1},
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded'
+					}
+				}).then(function success(resp){
+					var carLocation=resp.data.CarLocation;
+					$(".span2").html(carLocation);
+					
+				},function error(resp){
+					
+				});
+			});
+			
+			$(".banner_list_div").click(function(){
+				$(location).attr('href', 'smallCarJiLu.html');
+			});
+				
+				
+				
+			}]);
+		</script>
 	</body>
-
 </html>

@@ -274,14 +274,14 @@ button{
 	position: relative;
 	float: left;
 	border:1px solid #E8E8E8 ;
-	margin-left: 20px;
+	margin-left: 19px;
 }
 .tijiao button{
 	height: 45px;
 	width: 18%;
 	position: relative;
 	float: left;
-	left: 25px;
+	left: 20px;
 	margin: 0!important;
 	background-color:#6641E2!important;
 	border-radius: 10px!important;

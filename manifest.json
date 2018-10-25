@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "calcultor.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "home.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -135,5 +135,177 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [],
+				"refer": [
+					"home.html"
+				],
+				"priority": 0
+			},
+			"home.html": {
+				"resources": [],
+				"refer": [
+					"ludeng.html",
+					"setting.html",
+					"ETC.html",
+					"about.html"
+				],
+				"priority": 0
+			},
+			"bus.html": {
+				"resources": [],
+				"refer": [
+					"home.html"
+				],
+				"priority": 0
+			},
+			"setting.html": {
+				"resources": [],
+				"refer": [
+					"home.html",
+					"about.html"
+				],
+				"priority": 0
+			},
+			"about.html": {
+				"resources": [],
+				"refer": [
+					"home.html",
+					"setting.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"img/setc.png",
+				"img/huan1.png",
+				"login.html",
+				"img/icon_more_nor.png",
+				"parting.html",
+				"js/mui.dtpicker.js",
+				"img/home_btn_bg.png",
+				"js/angular-animate.min.js",
+				"fonts/mui-icons-extra.ttf",
+				"js/npm.js",
+				"img/icon_home_sel.png",
+				"forget_password.html",
+				"js/mui.poppicker.js",
+				"js/bootstrap.min.js",
+				"js/mui.previewimage.js",
+				"css/mui.imageviewer.css",
+				"js/city.data.js",
+				"js/mui.js",
+				"css/setting.css",
+				"js/plugins.js",
+				"js/scripts.js",
+				"img/icon_more_sel.png",
+				"js/mui.view.js",
+				"README.md",
+				"css/bottom.css",
+				"js/beecloud.js",
+				"js/app.js",
+				"js/rev-slider.js",
+				"img/xiaoche.png",
+				"fonts/mui.ttf",
+				"img/huan2.png",
+				"img/icon_meassage_nor.png",
+				"css/mui.listpicker.css",
+				"js/mui.lazyload.js",
+				"img/car2.png",
+				"js/city.data-3.js",
+				"css/parting.css",
+				"js/95516.js",
+				"img/pub0.png",
+				"unlock.html",
+				"css/mui.dtpicker.css",
+				"css/mui.picker.all.css",
+				"js/update.js",
+				"js/feedback.js",
+				"js/mui.imageViewer.js",
+				"environment.html",
+				"js/gmap3.js",
+				"smallCar.html",
+				"css/smallCarJiLu.css",
+				"img/tingchechang.png",
+				"img/bus.png",
+				"images/weixin.png",
+				"libs/echarts-all.js",
+				"img/carbg.png",
+				"images/iconfont-tianjia.png",
+				"js/mui.min.js",
+				"js/webviewGroup.js",
+				"images/sinaweibo.png",
+				"img/xingxichaxun.png",
+				"js/mui.indexedlist.js",
+				"js/mui.pullToRefresh.js",
+				"css/login.css",
+				"reg.html",
+				"css/environment.css",
+				"css/mui.indexedlist.css",
+				"img/ludeng.png",
+				"img/loading.png",
+				"img/icon_meassage_sel.png",
+				"img/loading.jpg",
+				"css/etc.css",
+				"img/icon_home_nor.png",
+				"css/mui.min.css",
+				"js/bootstrap.js",
+				"js/mui.locker.js",
+				"img/pub1.png",
+				"css/feedback.css",
+				"js/mui.picker.min.js",
+				"css/smallCar.css",
+				"js/mui.zoom.js",
+				"images/qihoo.png",
+				"css/mui.picker.min.css",
+				"img/pubbg.png",
+				"img/bg.png",
+				"css/honglvdeng.css",
+				"img/feilv.png",
+				"js/mui.picker.js",
+				"img/sousuo.png",
+				"js/mui.pullToRefresh.material.js",
+				"smallCarJiLu.html",
+				"img/hongludeng.png",
+				"js/mui.enterfocus.js",
+				"img/parkxia.png",
+				"css/home.css",
+				"img/chongzhi.png",
+				"css/about.css",
+				"img/right.png",
+				"images/user-photo.png",
+				"js/arttmpl.js",
+				"img/huanjing.png",
+				"img/shezhianniu.png",
+				"images/qq.png",
+				"img/buslogo.png",
+				"css/icons-extra.css",
+				"js/angular.min.js",
+				"js/mui.lazyload.img.js",
+				"img/back.png",
+				"img/car0.png",
+				"honglvdeng.html",
+				"js/mui.listpicker.js",
+				"js/angular-route.min.js",
+				"css/bus.css",
+				"css/mui.poppicker.css",
+				"js/jquery.min.js",
+				"img/huan0.png",
+				"css/ludeng.css",
+				"img/pub2.png",
+				"css/mui.picker.css",
+				"js/mui.picker.all.js",
+				"bottom.html",
+				"main.html",
+				"css/app.css",
+				"img/kongqibeijing.png",
+				"img/heimingdan.png",
+				"img/pub3.png"
+			]
+		}
+	}
 }

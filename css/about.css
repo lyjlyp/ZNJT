@@ -54,24 +54,4 @@ h4 {
 	bottom: 0px;
 }
 
-.bottom li {
-	height: 80px;
-	background: #FFFFFF!important;
-	text-align: center;
-	list-style-type: none;
-	width: 33.3%;
-	float: left;
-	margin-top: 10px;
-}	
-.bottom ul {
-	margin: 0;
-}
-
-.bottom li a {
-	text-decoration: none;
-	color: #000000;
-	font-size: 13px;
-}
-
-
 /*==================bottom end====================*/

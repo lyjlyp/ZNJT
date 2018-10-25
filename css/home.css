@@ -18,7 +18,7 @@ h4{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15px;
+	margin-top: 20px;
 }
 /*==================title end====================*/
 
@@ -95,7 +95,7 @@ h4{
 	float: left;
 	position: relative;
 	width: 100%;
-	height: 100px;
+	height: 90px;
 	background: #EFEFF4;
 }
 /*==================bottom start====================*/
@@ -103,28 +103,8 @@ h4{
 .bottom {
 	position: fixed;
 	width: 100%;
-	height: 80px;
+	height: 90px;
 	bottom: 0;
 }
-
-.bottom li {
-	height: 80px;
-	background: #FFFFFF!important;
-	text-align: center;
-	list-style-type: none;
-	width: 33.3%;
-	float: left;
-	margin-top: 20px;
-}	
-.bottom ul {
-	margin: 0;
-}
-
-.bottom li a {
-	text-decoration: none;
-	color: #000000;
-	font-size: 13px;
-}
-
 
 /*==================bottom end====================*/

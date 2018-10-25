@@ -73,44 +73,44 @@
 				<!--icon start-->
 				<div class="icon">
 					<ul class="mui-table-view mui-grid-view mui-grid-9">
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li1">
-							<a href="#">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="ETC.html">
 								<img src="img/setc.png" width="50px" height="50px" />
 								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;ETC</div>
 							</a>
 						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li2">
-							<a href="#">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="parting.html">
 								<img src="img/tingchechang.png" width="50px" height="50px" />
 								<div class="mui-media-body">&nbsp;停车场</div>
 							</a>
 						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li3">
-							<a href="#">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="smallCar.html">
 								<img src="img/xiaoche.png" width="50px" height="50px" />
 								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;小车</div>
 							</a>
 						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li4">
-							<a href="#">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="bus.html">
 								<img src="img/bus.png" width="50px" height="50px" />
 								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;公交</div>
 							</a>
 						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li5">
-							<a href="#">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="environment.html">
 								<img src="img/huanjing.png" width="50px" height="50px" />
 								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;环境</div>
 							</a>
 						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li6">
-							<a href="#">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="honglvdeng.html">
 								<img src="img/hongludeng.png" width="50px" height="50px" />
 								<div class="mui-media-body">&nbsp;红绿灯</div>
 							</a>
 						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 home_li7">
-							<a href="#">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="ludeng.html">
 								<img src="img/ludeng.png" width="50px" height="50px" />
 								<div class="mui-media-body">&nbsp;&nbsp;&nbsp;路灯</div>
 							</a>
@@ -121,34 +121,14 @@
 				</div>
 				<!--icon end-->
 
-				<div class="bg2">
+				<!--<div class="bg2">
 
-				</div>
+				</div>-->
 
 				
 				<!--bottom start-->
 			<div class="bottom">
-				<ul class="mui-table-view mui-grid-view mui-grid-9">
-					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li1">
-						<a href="#">
-							<img src="img/icon_home_nor.png" width="20px" height="20px" />
-							<div class="mui-media-body">首页</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li2">
-						<a href="#">
-							<img src="img/icon_meassage_nor.png" width="20px" height="20px" />
-							<div class="mui-media-body">设置</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 bottom_li3">
-						<a href="#">
-							<img src="img/icon_more_nor.png" width="20px" height="20px" />
-							<div class="mui-media-body">关于</div>
-						</a>
-					</li>
-
-				</ul>
+				<my-bottom></my-bottom>
 			</div>
 			<!--bottom end-->
 			
@@ -161,6 +141,12 @@
 			</script>
 			<script type="text/javascript">
 				var homeApp = angular.module("homeApp", []);
+				homeApp.directive("myBottom",function(){
+				return{
+					restrict:"AEC",
+					templateUrl:"bottom.html"
+				}
+			});
 //				homeApp.directive("myBottom",function(){
 //					return{
 //						restrict:"AEC",
@@ -172,39 +158,6 @@
 					var home = this;
 					//从登录页面传过来的ip
 					home.ip = $window.localStorage["ip_input"];
-
-					$(".home_li1").click(function() {
-						$window.location.href = "ETC.html";
-					});
-					$(".home_li2").click(function() {
-						$window.location.href = "parting.html";
-					});
-					$(".home_li3").click(function() {
-						$window.location.href = "smallCar.html";
-					});
-					$(".home_li4").click(function() {
-						$window.location.href = "bus.html";
-					});
-					$(".home_li5").click(function() {
-						$window.location.href = "environment.html";
-					});
-					$(".home_li6").click(function() {
-						$window.location.href = "honglvdeng.html";
-					});
-					$(".home_li7").click(function() {
-						$window.location.href = "ludeng.html";
-					});
-
-					$(".bottom_li1").click(function() {
-						$window.location.href = "home.html";
-					});
-					$(".bottom_li2").click(function() {
-						$window.location.href = "setting.html";
-					});
-					$(".bottom_li3").click(function() {
-						$window.location.href = "about.html";
-					});
-					
 					
 
 					//				$http({}).then(function success(resp){
