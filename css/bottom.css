@@ -5,18 +5,18 @@ body{
 
 .bottom {
 	width: 100%;
-	height: 80px;
+	height: 65px;
 	bottom: 0;
 }
 
 .bottom li {
-	height: 80px;
+	height: 65px;
 	background: #FFFFFF!important;
 	text-align: center;
 	list-style-type: none;
 	width: 33.3%;
 	float: left;
-	margin-top: 10px;
+	padding: 0!important;
 }	
 .bottom ul {
 	margin: 0;
@@ -25,7 +25,7 @@ body{
 .bottom li a {
 	text-decoration: none;
 	color: #000000;
-	font-size: 13px;
+	font-size: 10px;
 }
 
 
